@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: renren-fast
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml   # 你用 yml/yaml 就写 yaml；如果你在 Nacos 里用 properties 就写 properties
+      discovery:
+        server-addr: 127.0.0.1:8848

@@ -20,3 +20,19 @@
    email=nickzhangcs@gmail.com
    
    tablePrefix=oms_    // this one is database prefix
+3. use nacos for services discovery
+4. use openFeign to utilize apis
+      - add dependency to both modules
+      - add feign package and its interface to use api from another module, example
+        @FeignClient("gulimall-coupon")
+        public interface CouponFeignService {
+
+   @RequestMapping("/coupon/coupon/member/list")
+   public R membercoupons();
+
+}
+      - add to the main class
+         @EnableFeignClients(basePackages = "com.atguigu.gulimall.member.feign")
+
+5. test uploading configurations to the nacos
+6. 

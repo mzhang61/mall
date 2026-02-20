@@ -18,10 +18,11 @@
         <module>renren-fast</module>
         <module>renren-generator</module>
         <module>gulimall-common</module>
+        <module>gulimall-gateway</module>
         <!--
        <module>gulimall-common</module>
        <module>gulimall-order</module>
-       <module>gulimall-gateway</module>
+
        <module>gulimall-auth-server</module>
        <module>gulimall-cart</module>
        <module>gulimall-search</module>
